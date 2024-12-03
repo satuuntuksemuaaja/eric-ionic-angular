@@ -1,17 +1,20 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="custom-content">
+  <!-- Header -->
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!-- Content with Images -->
+  <div class="content-wrapper">
+    <!-- Middle Image -->
+    <img class="middle-image" [src]="baseImage" alt="Middle Image" />
+
+    <!-- Bottom Image (positioned in front of the middle image) -->
+    <img class="bottom-image" [src]="statisticImage" alt="Bottom Image" />
+  </div>
 </ion-content>

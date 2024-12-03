@@ -1,0 +1,29 @@
+.custom-content {
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Center the middle image vertically */
+      height: 100%;
+      position: relative; /* For absolute positioning of bottom image */
+      padding: 20px;
+  
+      /* Middle Image - Centered Vertically */
+      .middle-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+  
+      /* Bottom Image - Positioned in front of the middle image */
+      .bottom-image {
+        position: absolute;
+        bottom: 50px; /* Adjust to position the bottom image */
+        left: 50%;
+        transform: translateX(-50%); /* Center the bottom image */
+        width: 60%; /* Adjust the width as needed */
+        height: auto;
+      }
+    }
+  }
+  

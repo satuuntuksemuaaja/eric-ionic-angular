@@ -1,1 +1,37 @@
+/* Tab Bar Styles */
+ion-tab-bar {
+    --background: #cee7e7;
+    /* Default background color for the tab bar */
+}
 
+/* Tab Button Styles */
+ion-tab-button {
+    --color-selected: #008080;
+    /* Text/icon color when selected */
+    --color: #000000;
+    /* Text/icon color when not selected */
+    --font-family: 'Open Sans';
+    /* Set font to Open Sans */
+}
+
+/* Label Styles */
+ion-label {
+    font-family: 'Open Sans', sans-serif
+}
+
+/* Icon Styles */
+ion-icon {
+    --color: #ff5733;
+    /* Change icon color */
+    --size: 24px;
+    /* Change icon size */
+}
+
+/* Custom Icon Styles */
+ion-tab-button .custom-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    /* Center the icon */
+    display: block;
+}

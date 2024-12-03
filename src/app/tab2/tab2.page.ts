@@ -9,4 +9,7 @@ export class Tab2Page {
 
   constructor() {}
 
+  baseImage = "../../assets/icon/base.jpg";
+  statisticImage = "../../assets/icon/statistic.png";
+
 }

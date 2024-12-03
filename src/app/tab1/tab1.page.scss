@@ -1,0 +1,46 @@
+.custom-content {
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        /* Make it fill the screen */
+        padding: 20px;
+        /* Add some padding */
+
+        /* Top Image */
+        .top-image {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+            /* Space below top image */
+        }
+
+        /* Middle Image */
+        .middle-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            /* Space below middle image */
+        }
+
+        /* Bottom Images with Dynamic Gap */
+        .bottom-images {
+            display: flex;
+            justify-content: space-between;
+            /* Distribute images evenly */
+            width: 100%;
+            /* Take full width */
+            padding: 0 20px;
+            /* Optional padding for spacing from edges */
+
+            /* Ensure images scale appropriately */
+            img {
+                width: 30%;
+                /* Make each image take 30% of the container width */
+                height: auto;
+            }
+        }
+    }
+}

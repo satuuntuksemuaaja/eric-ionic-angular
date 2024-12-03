@@ -1,17 +1,27 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="custom-content">
+  <!-- Header -->
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- Content with Images -->
+  <div class="content-wrapper">
+    <!-- Top Image -->
+    <img class="top-image" [src]="topLogo" alt="Top Image" />
+
+    <!-- Middle Image -->
+    <img class="middle-image" [src]="baseImage" alt="Middle Image" />
+
+    <!-- Bottom Inline Images -->
+    <div class="bottom-images">
+      <ng-container *ngFor="let image of bottomImages">
+        <img [src]="image.src" [alt]="image.alt" />
+      </ng-container>
+    </div>
+  </div>
 </ion-content>
